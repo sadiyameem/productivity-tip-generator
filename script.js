@@ -21,7 +21,6 @@ const productivityTips = [
     "Set alerts for deadlines and important tasks. Avoiding missed deadlines and overlooked details. - Reminders",
 ];
 
-let tipCount = 0;
 let lastTipIndex = -1;
 
 function generateTip() {
@@ -32,17 +31,11 @@ function generateTip() {
     } while (randomIndex === lastTipIndex && productivityTips.length > 1);
 
     lastTipIndex = randomIndex;
-    tipCount++;
 
     const tipElement = document.getElementById("tipText");
     const tipContainer = document.getElementById("tipContainer");
-    const counterElement = document.getElementById("tipCounter");
 
-    tipCounter.classList.remove("fade-in");
     setTimeout(() => {
         tipElement.textContent = productivityTips[randomIndex];
-        tipContainer.classList.add("fade-in");
     }, 50);
-
-    counterElement.textContent = `Tips generated: ${tipCount}`;
 }
