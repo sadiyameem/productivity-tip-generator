@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: purple;
+    background-color: #DCD0FF;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ body {
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 20px 40px black;
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
     text-align: center;
 }
@@ -50,7 +50,7 @@ h1 {
 }
 
 .generate-btn {
-    background: lavender;
+    background: #E0CFF7;
     color: black;
     border: none;
     padding: 15px 40px;
